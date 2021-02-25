@@ -1,0 +1,7 @@
+/* .header = elemento de bloque */
+.header {
+	// border: 1px solid red;
+	display: flex; /* .header = elemento de linea */
+	padding: 1em 1.5em;
+	justify-content: space-between; /* los elementos esten a los extremos uno del otro */
+}

@@ -1,0 +1,56 @@
+@import 'header.scss';
+@import 'hero.scss';
+@import 'navbar.scss';
+:root {
+	--dark-blue: hsl(233, 26%, 24%);
+	--lime-green: hsl(136, 65%, 51%);
+	--bright-cyan: hsl(192, 70%, 51%);
+
+	--grayish-blue: hsl(233, 8%, 62%);
+	--light-grayish-blue: hsl(220, 16%, 96%);
+	--very-light-gray: hsl(0, 0%, 98%);
+	--white: hsl(0, 0%, 100%);
+	font-size: 16px;
+	--wrapperSpace: 1.5em;
+}
+
+body {
+	// border: 10px solid purple;
+	margin: 0px;
+	font-family: 'Public Sans', sans-serif;
+	color: var(--grayish-blue);
+}
+
+.wrapper {
+	// border: 1px solid green;
+	padding: 0 var(--wrapperSpace);
+}
+.title {
+	border: 1px solid red;
+	&__h1 {
+		margin: 0; /* quitando margenes por defecto */
+		color: var(--dark-blue);
+		font-size: 2.5em;
+		font-weight: 300; /* que tan negrito - bold */
+		line-height: 1.3; /* espacio entre letras lado a lado*/
+		margin-bottom: 0.5em;
+	}
+}
+.copy {
+	// border: 1px solid red;
+	font-size: 0.9em;
+	line-height: 1.7; /* espacio entre letras lado a lado*/
+}
+
+.button {
+	// border: 1px solid red;
+	padding: 0.9em 2.2em;
+	background-image: linear-gradient(
+		to right,
+		var(--lime-green),
+		var(--bright-cyan)
+	);
+	border-radius: 1.5em;
+	color: var(--white);
+	font-size: 1em;
+}
