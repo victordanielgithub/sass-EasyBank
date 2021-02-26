@@ -1,0 +1,24 @@
+.why {
+	// border: 1px solid red;
+	text-align: center;
+	background: var(--light-grayish-blue);
+	padding-top: 5em; /* espacio con item */
+	.copy {
+		// border: 1px solid red;
+		margin-bottom: 4em;
+		font-size: 1em;
+	}
+	&__item {
+		// border: 1px solid red;
+		.copy {
+			// border: 1px solid blue;
+			margin-bottom: 2em;
+		}
+		// border: 1px solid blue;
+		img {
+			padding-bottom: 1.5em;
+		}
+	}
+}
+/* inicio minutos 2:20:00 - */
+/* fin minutos 2:20:00 - */
