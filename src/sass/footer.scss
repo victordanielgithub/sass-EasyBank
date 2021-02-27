@@ -1,0 +1,64 @@
+.footer {
+	// border: 1px solid red;
+	background: var(--dark-blue);
+	padding: 2em 0;
+	text-align: center;
+	svg {
+		display: block;
+		margin: auto;
+		margin-bottom: 2em;
+	}
+	&__social {
+		// border: 1px solid white;
+		display: grid;
+		grid-template-columns: repeat(5, 25px);
+		grid-column-gap: 1em;
+		justify-content: center;
+		margin: 2.5em 0;
+	}
+	&__link {
+		// border: 1px solid white;
+		text-decoration: none;
+		display: block;
+		margin-bottom: 1em;
+		color: var(--light-grayish-blue);
+	}
+	&__copyright {
+		// border: 1px solid red;
+		color: var(--grayish-blue);
+		margin-top: 2.5em;
+	}
+}
+@mixin icon {
+	/* <a>: por defecto no reconoce ancho ni alto pues es una etiqueta inline */
+	// border: 1px solid red;
+	width: 25px;
+	height: 25px;
+	display: inline-flex; /* layout: con esto ya reconoce ancho y alto */
+	background-repeat: no-repeat;
+}
+.icon {
+	&__facebook {
+		@include icon;
+		background-image: url('../../static/images/icon-facebook.svg');
+	}
+	&__youtube {
+		@include icon;
+		background-image: url('../../static/images/icon-youtube.svg');
+	}
+	&__twitter {
+		@include icon;
+		background-image: url('../../static/images/icon-twitter.svg');
+	}
+	&__pinterest {
+		@include icon;
+		background-image: url('../../static/images/icon-pinterest.svg');
+	}
+	&__instagram {
+		@include icon;
+		background-image: url('../../static/images/icon-instagram.svg');
+	}
+}
+
+/* inicio minutos 3:26:00 - */
+/* fin minutos 4:00:00 - */

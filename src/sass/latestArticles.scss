@@ -1,0 +1,45 @@
+.latestArticles {
+	// border: 1px solid red;
+	background: var(--very-light-gray);
+	padding: 5em 0;
+	.title__h1 {
+		text-align: center;
+	}
+	&__grid {
+		display: grid;
+		grid-row-gap: 1.5em;
+	}
+	&__items {
+		// border: 1px solid blue;
+		background: var(--white);
+		border-radius: 0.5em;
+		overflow: hidden; /* la imagen no se sale del contenedor */
+		img {
+			// max-width: 100%; /* ancho de la img se adapta a su contenedor */
+			width: 100%; /* se estira la imagen lo cual es malo!!! */
+			object-fit: cover; /* arregla el estiron de la imagen <- */
+			display: block;
+			// height: 12.5em; /* el alto lo definimo en el html por mejores practicas */
+		}
+		&__content {
+			// border: 1px solid red;
+			padding: 1.8em;
+			small {
+				color: var(--grayish-blue);
+				font-size: 0.6em;
+				margin-bottom: 1em;
+				display: block;
+			}
+			.title__h3 {
+				text-align: left;
+			}
+			.copy {
+				// border: 1px solid red;
+				color: var(--grayish-blue);
+			}
+		}
+	}
+}
+
+/* inicio minutos 2:52:00 - */
+/* fin minutos 3:26:00 - */
