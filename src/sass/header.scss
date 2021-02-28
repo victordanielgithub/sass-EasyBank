@@ -2,6 +2,29 @@
 .header {
 	// border: 1px solid red;
 	display: flex; /* .header = elemento de linea */
-	padding: 1em 1.5em;
+	padding: 1em 0m;
 	justify-content: space-between; /* los elementos esten a los extremos uno del otro */
+	position: relative;
+	&__logo {
+		// border: 1px solid red;
+		align-self: center; // centrando la imagen logo de manera vertical
+	}
+	.button {
+		display: none;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	@media screen and(min-width: 1024px) {
+		.button {
+			display: inline;
+		}
+		&__content {
+			// border: 1px solid blue;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
 }

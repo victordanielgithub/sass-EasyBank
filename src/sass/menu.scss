@@ -1,0 +1,70 @@
+.menu {
+	// border: 1px solid green;
+	display: none;
+	list-style: none; // lista li sin estilos
+	padding: 0;
+	margin: 0;
+	&__button {
+		// border: 10px solid red;
+		width: 40px;
+		height: 40px;
+		background: url('../../static/images/icon-hamburger.svg') center no-repeat;
+	}
+	a {
+		text-decoration: none;
+		color: var(--grayish-blue);
+		padding: 0 0.8em;
+	}
+	&__checkbox {
+		display: none;
+		&:checked {
+			& ~ .menu__button {
+				background: url('../../static/images/icon-close.svg') center no-repeat;
+			}
+			& ~ .menu {
+				display: block;
+				position: absolute;
+				top: 100%;
+				padding: 1em;
+				left: 0;
+				right: 0;
+				height: 100vh;
+				background: linear-gradient(
+					to bottom,
+					var(--dark-blue) 0%,
+					transparent 90%
+				);
+				.menu__item {
+					&:first-of-type a {
+						// border: 1px solid red;
+						padding-top: 2em;
+						border-radius: 0.5em 0.5em 0 0;
+					}
+					&:last-of-type a {
+						padding-bottom: 2em;
+						border-radius: 0 0 0.5em 0.5em;
+					}
+				}
+				a {
+					background: white;
+					padding: 0.8em 1em;
+					color: var(--dark-blue);
+					font-size: 1.1em;
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		display: flex; // los ul se van uno al lado del otro
+		&__button {
+			display: none;
+		}
+		&__item {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+// 2:20:30

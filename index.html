@@ -13,21 +13,44 @@
 		/>
 	</head>
 	<body>
+		<!-- Header -->
 		<header class="header">
-			<img src="static/images/logo.svg" alt="" class="" />
-			<nav class="navbar"></nav>
+			<div class="wrapper">
+				<div class="header__content">
+					<img
+						class="header__logo"
+						src="static/images/logo.svg"
+						alt=""
+						class=""
+					/>
+					<input checked type="checkbox" id="menu" class="menu__checkbox" />
+					<ul class="menu">
+						<li class="menu__item"><a href="#">Home</a></li>
+						<li class="menu__item"><a href="#">About</a></li>
+						<li class="menu__item"><a href="#">Contact</a></li>
+						<li class="menu__item"><a href="#">Blog</a></li>
+						<li class="menu__item"><a href="#">Careers</a></li>
+					</ul>
+					<button class="button">Request Invite</button>
+					<label for="menu" class="menu__button"></label>
+				</div>
+			</div>
 		</header>
 		<!-- Next generation digital banking -->
 		<section class="hero">
 			<div class="wrapper">
-				<div class="hero__image"></div>
-				<h1 class="title__h1">Next generation digital banking</h1>
-				<p class="copy">
-					Take your financial life online. Your Easybank account will be a
-					one-stop-shop for spending, saving, budgeting, investing, and much
-					more.
-				</p>
-				<button class="button">Request Invite</button>
+				<div class="hero__content">
+					<div class="hero__image"></div>
+					<div class="hero__description">
+						<h1 class="title__h1">Next generation digital banking</h1>
+						<p class="copy">
+							Take your financial life online. Your Easybank account will be a
+							one-stop-shop for spending, saving, budgeting, investing, and much
+							more.
+						</p>
+						<button class="button">Request Invite</button>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- Why choose Easybank? -->
@@ -161,9 +184,15 @@
 				</div>
 			</div>
 		</section>
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="wrapper">
-				<svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+				<svg
+					class="footer__logo"
+					xmlns="http://www.w3.org/2000/svg"
+					width="139"
+					height="20"
+				>
 					<defs>
 						<linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
 							<stop offset="0%" stop-color="#33D35E" />
@@ -190,13 +219,15 @@
 					<a href="#" class="icon__pinterest"></a>
 					<a href="#" class="icon__instagram"></a>
 				</p>
-				<a href="#" class="footer__link">About Us</a>
-				<a href="#" class="footer__link">Contact </a>
-				<a href="#" class="footer__link">Blog </a>
-				<a href="#" class="footer__link">Careers </a>
-				<a href="#" class="footer__link">Support</a>
-				<a href="#" class="footer__link">Privacy Policy</a>
-				<div>
+				<div class="footer__links">
+					<a href="#" class="footer__link">About Us</a>
+					<a href="#" class="footer__link">Contact </a>
+					<a href="#" class="footer__link">Blog </a>
+					<a href="#" class="footer__link">Careers </a>
+					<a href="#" class="footer__link">Support</a>
+					<a href="#" class="footer__link">Privacy Policy</a>
+				</div>
+				<div class="footer__button">
 					<button class="button">Request Invite</button>
 				</div>
 				<p class="footer__copyright">© Easybank. All Rights Reserved</p>

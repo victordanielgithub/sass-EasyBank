@@ -3,7 +3,7 @@
 	background: var(--dark-blue);
 	padding: 2em 0;
 	text-align: center;
-	svg {
+	&__logo {
 		display: block;
 		margin: auto;
 		margin-bottom: 2em;
@@ -57,6 +57,46 @@
 	&__instagram {
 		@include icon;
 		background-image: url('../../static/images/icon-instagram.svg');
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		// background: red;
+		.wrapper {
+			display: grid;
+			grid-template-columns: 200px 1fr 400px;
+			grid-template-areas:
+				'logo links button'
+				'social links copyright';
+			grid-column-gap: 7em;
+		}
+		&__logo {
+			// border: 1px solid blue;
+			grid-area: logo;
+			margin: initial;
+		}
+		&__social {
+			// border: 1px solid blue;
+			grid-area: social;
+		}
+		&__links {
+			// border: 1px solid blue;
+			grid-area: links;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: start;
+		}
+		&__button {
+			// border: 1px solid blue;
+			grid-area: button;
+			text-align: right;
+		}
+		&__copyright {
+			// border: 1px solid blue;
+			grid-area: copyright;
+			text-align: right;
+		}
 	}
 }
 
